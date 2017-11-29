@@ -2514,7 +2514,7 @@
 
 			#main-banner{
 				/*background-image: url("../../images/waco_banner.png");*/
-				background-image: url("../../images/TexasSymposiumBanner.jpg");
+				background-image: url("../../images/2018_Banner_Smaller.png");
 				/*background-position: center;*/
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -2607,6 +2607,7 @@
 				/*vertical-align: middle;*/
 				text-align: left;
 				margin-left: 10%;
+                margin-right: 10%;
 				margin-bottom: 5%;
 			}
 
@@ -2635,9 +2636,20 @@
 		padding: 5em 0 3em 0;
 	}
 
+
 		.wrapper.style1 {
 			background: #fff;
 		}
+
+        .fixed-bg {
+            background-image: url("images/TexasSymposiumLogoWatermarkLarge.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 800px 800px;
+            background-repeat: no-repeat;
+        }
+        
 
 		.wrapper.style2 {
 			background-color: #fff;
@@ -2940,7 +2952,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
-				padding-top: 44px;
+				padding-top: 4px;
 			}
 
 			#titleBar {
