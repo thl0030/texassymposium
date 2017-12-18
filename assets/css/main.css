@@ -2514,7 +2514,7 @@
 
 			#main-banner{
 				/*background-image: url("../../images/waco_banner.png");*/
-				background-image: url("../../images/2018_Banner_Smaller.png");
+				background-image: url("../../images/2018_Banner.png");
 				/*background-position: center;*/
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -2641,14 +2641,14 @@
 			background: #fff;
 		}
 
-        .fixed-bg {
+        /*.fixed-bg {
             background-image: url("images/TexasSymposiumLogoWatermarkLarge.png");
             min-height: 500px;
             background-attachment: fixed;
             background-position: center;
             background-size: 800px 800px;
             background-repeat: no-repeat;
-        }
+        }*/
         
 
 		.wrapper.style2 {
