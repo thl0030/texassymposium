@@ -3,7 +3,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -11,6 +11,16 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+
+    nav {
+        margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+    
+    }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1819,7 +1829,7 @@
 	}
 
 		a:hover {
-			color: #2200CC;
+			color: #003278;
 			border-bottom-color: transparent;
 		}
 
@@ -1958,7 +1968,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #2200CC;
+			border-color: #003278;
 		}
 
 	input[type="text"],
@@ -2067,7 +2077,7 @@
 		.icon.major {
 			text-align: center;
 			cursor: default;
-			background-color: #2200CC;
+			background-color: #003278;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -2219,7 +2229,7 @@
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-		background-color: #2200CC;
+		background-color: #003278;
 		border-radius: 5px;
 		border: 0;
 		color: #fff;
@@ -2327,11 +2337,11 @@
 
 	#header {
 		text-align: center;
-		/*padding: 3em 0 0 0;*/
+		/*padding: 0 0 0 0;*/
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
-		background-size: 100% 6em,					100% 6em,					auto;
+		background-size: 100%,					100%,					auto;
 		background-repeat: no-repeat,					no-repeat,					repeat;
 	}
 
@@ -2345,6 +2355,148 @@
 				letter-spacing: -0.025em;
 				border: 0;
 			}
+    #headbar {
+        background-color: #003278;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+        top: 0;
+        width: 100%;
+		padding: 0;
+        text-align:center;
+        
+    }
+	#headbar header {
+		/*position: absolute;*/
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		/*background: #003278;
+		background: rgba(27, 27, 27, 0.75);*/
+		color: #fff;
+		padding: 1em 0;
+	}
+    #headbar > ul > li > h2 {
+        display: inline-block;
+		margin: 0;
+		font-size: 1.25em;
+		vertical-align: middle;
+	}
+
+	#headbar > ul > li > h2 em {
+        opacity: 0.75;
+	}
+
+	#headbar > ul > li > h2 a {
+		border-bottom-color: rgba(255, 255, 255, 0.5);
+	}
+
+	#headbar > ul > li > h2 a:hover {
+		border-bottom-color: transparent;
+	}
+	#headbar header .button {
+        vertical-align: middle;
+		margin-left: 1em;
+        background-color: #C0111F;
+	}
+        
+		#headbar > ul {
+			margin: 0;
+		}
+
+			#headbar > ul > li {
+				position: relative;
+				display: inline-block;
+				margin-left: 1em;
+			}
+
+            input[type="submit"],
+            input[type="reset"],
+            input[type="button"],
+            #headbar > ul > li .button {
+                /*vertical-align: middle;
+                margin-left: 1em;*/
+                background-color: #C0111F;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                -ms-appearance: none;
+                appearance: none;
+                -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+                background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+                background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+                background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+                /*background-color: #003278;*/
+                border-radius: 5px;
+                border: 0;
+                color: #fff;
+                cursor: pointer;
+                display: inline-block;
+                padding: 0 1.5em;
+                line-height: 2.75em;
+                min-width: 9em;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: -0.025em;
+                }
+
+				#headbar > ul > li a {
+					color: #fff;
+					text-decoration: none;
+					border: 0;
+					display: block;
+					padding: 1.5em 0.5em 1.35em 0.5em;
+				}
+
+				#headbar > ul > li:first-child {
+					margin-left: 0;
+				}
+
+				#headbar > ul > li:hover a {
+					color: #C0111F;
+				}
+
+				#headbar > ul > li.current {
+					font-weight: 600;
+				}
+
+					#headbar > ul > li.current:before {
+						-moz-transform: rotateZ(45deg);
+						-webkit-transform: rotateZ(45deg);
+						-ms-transform: rotateZ(45deg);
+						transform: rotateZ(45deg);
+						width: 0.75em;
+						height: 0.75em;
+						content: '';
+						display: block;
+						position: absolute;
+						bottom: -0.5em;
+						left: 50%;
+						margin-left: -0.375em;
+						background-color: #003278;
+						background-image: url("images/bg01.png");
+					}
+
+					#headbar > ul > li.current a {
+						color: #fff;
+					}
+
+				#headbar > ul > li.active a {
+					color: #fff;
+				}
+
+				#headbar > ul > li.active.current:before {
+					opacity: 0;
+				}
+
+				#headbar > ul > li > ul {
+					display: none;
+				}
 
 	#nav {
 		cursor: default;
@@ -2353,6 +2505,8 @@
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+        top: 0;
+        width: 100%;
 		padding: 0;
 	}
 
@@ -2361,7 +2515,7 @@
 			display: block;
 			width: 100%;
 			height: 0.75em;
-			background-color: #2200CC;
+			background-color: #003278;
 			background-image: url("images/bg01.png");
 		}
 
@@ -2376,7 +2530,7 @@
 			}
 
 				#nav > ul > li a {
-					color: #c0c0c0;
+					color: #fff;
 					text-decoration: none;
 					border: 0;
 					display: block;
@@ -2408,7 +2562,7 @@
 						bottom: -0.5em;
 						left: 50%;
 						margin-left: -0.375em;
-						background-color: #2200CC;
+						background-color: #003278;
 						background-image: url("images/bg01.png");
 					}
 
@@ -2528,10 +2682,12 @@
 			}
 
 			#conf-section{
-				background-image: url("../../images/banner.jpg");
-				background-position: center center;
-				background-size: cover;
-				height: 38em;
+				background-image: url("../../images/Watermark.png"), url("images/bg01.png") ;
+				background-position: center, center;
+				background-size: 40em, cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed, scroll;
+				height: auto;
 				text-align: center;
 				font-weight: bold;
 
@@ -2602,7 +2758,7 @@
 			}
 
 			.conf-content {
-				color: #fff;
+				color: black;
 				display: inline-block;
 				/*vertical-align: middle;*/
 				text-align: left;
@@ -2660,7 +2816,7 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #2200CC;
+			background-color: #003278;
 			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
@@ -2674,7 +2830,7 @@
 			}
 
 				.wrapper.style3 .button:hover {
-					color: #2200CC !important;
+					color: #003278 !important;
 				}
 
 /* CTA */
@@ -2707,7 +2863,7 @@
 		}
 
 			#footer a:hover {
-				color: #2200CC;
+				color: #003278;
 				border-bottom-color: transparent;
 			}
 
@@ -2783,7 +2939,7 @@
 		/* Header */
 
 			#header {
-				padding: 2em 0 0 0;
+				padding: 0 0 0 0;
 			}
 
 				#header h1 {
@@ -2899,7 +3055,7 @@
 		/* Header */
 
 			#header {
-				display: none;
+				display: block;
 			}
 
 		/* Banner */
@@ -2978,7 +3134,7 @@
 				background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 				height: 44px;
 				line-height: 44px;
-				box-shadow: 0 4px 0 0 #2200CC;
+				box-shadow: 0 4px 0 0 #003278;
 			}
 
 				#titleBar .title {
