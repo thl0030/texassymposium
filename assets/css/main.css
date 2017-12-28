@@ -2673,7 +2673,7 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				/*background-size: 80em 60em;*/
-				height: 35em;
+				height: 26em;
 				text-align: center;
 				display: block;
 				margin-left: auto;
@@ -2798,7 +2798,7 @@
 		}
 
         .fixed-bg {
-            background-image: url("images/TexasSymposiumLogoWatermarkLarge.png");
+            background-image: url("images/TxSymposiumLogoTrans.png");
             min-height: 500px;
             background-attachment: fixed;
             background-position: center;
