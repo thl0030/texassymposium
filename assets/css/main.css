@@ -3,7 +3,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol.none, ul.none, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -30,9 +30,10 @@
 		line-height: 1;
 	}
 
-	ol, ul {
+	ol.none, ul.none {
 		list-style: none;
 	}
+
 
 	blockquote, q {
 		quotes: none;
@@ -1841,7 +1842,7 @@
 		font-style: italic;
 	}
 
-	p, ul, ol, dl, table, blockquote {
+	p, ul.none, ol.none, dl, table, blockquote {
 		margin: 0 0 2em 0;
 	}
 
@@ -2118,6 +2119,11 @@
 
 	ul.links li {
 		line-height: 2.5em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
 	}
 
 	ul.icons {
